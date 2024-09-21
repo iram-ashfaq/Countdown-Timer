@@ -2,26 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .heading {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #494545;
+    margin-bottom: 10px;
   }
-}
+  
+  .timeRemaining {
+    font-size: 1.5rem;
+    color: #200b7c;
+  }
+  /* Styling for h1 in the timer */
+h1 {
+    font-size: 2.5rem; /* Increase the size */
+    color: #f1eded; /* Dark gray color */
+    text-align: center; /* Center the text */
+    font-family: poppins; /* Font style */
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+  }
+  
+  body {
+    background-color: #435d61; /* Light cyan background */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Centering the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  body {
+    background: linear-gradient(135deg, #cecdcd, #c2bfbc); /* Gradient background */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Centering the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the timer */
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increase the size */
+    color: #333; /* Dark gray color */
+    text-align: center; /* Center the text */
+    font-family: 'poppins', poppins; /* Font style */
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+  }
+  
+  h2 {
+    font-size: 1.8rem; /* Increased size for the timer display */
+    color: #5f58a1; /* Countdown color */
+    margin: 10px 0; /* Space above and below the countdown */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding around text */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Not-allowed cursor */
+  }
+  
+  
